@@ -9,12 +9,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+terraform {
+  required_version = "~> 1.0"
 
-resource "azurerm_servicebus_namespace_authorization_rule" "rule" {
-  name         = var.name
-  namespace_id = var.namespace_id
-
-  listen = var.listen
-  send   = var.send
-  manage = var.manage
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.77"
+    }
+  }
 }

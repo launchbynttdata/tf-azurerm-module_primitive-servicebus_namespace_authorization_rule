@@ -103,3 +103,50 @@ If `make check` target is successful, developer is good to commit the code to pr
 - runs `conftests`. `conftests` make sure `policy` checks are successful.
 - runs `terratest`. This is integration test suit.
 - runs `opa` tests
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.117.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [azurerm_servicebus_namespace_authorization_rule.rule](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/servicebus_namespace_authorization_rule) | resource |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_name"></a> [name](#input\_name) | The name of the Service Bus Namespace Authorization Rule. | `string` | n/a | yes |
+| <a name="input_namespace_id"></a> [namespace\_id](#input\_namespace\_id) | The ID of the Service Bus Namespace. | `string` | n/a | yes |
+| <a name="input_listen"></a> [listen](#input\_listen) | Specifies whether the Authorization Rule has listen permissions. | `bool` | `null` | no |
+| <a name="input_send"></a> [send](#input\_send) | Specifies whether the Authorization Rule has send permissions. | `bool` | `null` | no |
+| <a name="input_manage"></a> [manage](#input\_manage) | Specifies whether the Authorization Rule has manage permissions. | `bool` | `null` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_id"></a> [id](#output\_id) | The Service Bus Topic ID |
+| <a name="output_name"></a> [name](#output\_name) | The name of the Service Bus Namespace Authorization Rule. |
+| <a name="output_primary_key"></a> [primary\_key](#output\_primary\_key) | The primary key for the Service Bus Namespace Authorization Rule. |
+| <a name="output_secondary_key"></a> [secondary\_key](#output\_secondary\_key) | The secondary key for the Service Bus Namespace Authorization Rule. |
+| <a name="output_primary_connection_string"></a> [primary\_connection\_string](#output\_primary\_connection\_string) | The primary connection string for the Service Bus Namespace Authorization Rule. |
+| <a name="output_secondary_connection_string"></a> [secondary\_connection\_string](#output\_secondary\_connection\_string) | The secondary connection string for the Service Bus Namespace Authorization Rule. |
+| <a name="output_primary_connection_string_alias"></a> [primary\_connection\_string\_alias](#output\_primary\_connection\_string\_alias) | The alias Primary Connection String for the ServiceBus Namespace, if the namespace is Geo DR paired. |
+| <a name="output_secondary_connection_string_alias"></a> [secondary\_connection\_string\_alias](#output\_secondary\_connection\_string\_alias) | The alias Secondary Connection String for the ServiceBus Namespace |
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
