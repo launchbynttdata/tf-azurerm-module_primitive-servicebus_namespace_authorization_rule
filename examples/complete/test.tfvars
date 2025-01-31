@@ -9,12 +9,9 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-resource "azurerm_servicebus_namespace_authorization_rule" "rule" {
-  name         = var.name
-  namespace_id = var.namespace_id
-
-  listen = var.listen
-  send   = var.send
-  manage = var.manage
+tags = {
+  Purpose = "Terratest"
 }
+send   = true
+listen = true
+manage = true
