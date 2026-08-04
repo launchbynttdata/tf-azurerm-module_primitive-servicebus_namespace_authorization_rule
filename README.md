@@ -77,7 +77,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|---------|
+|------|------|
 | [azurerm_servicebus_namespace_authorization_rule.rule](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/servicebus_namespace_authorization_rule) | resource |
 
 ## Inputs
@@ -93,7 +93,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|---------|
+|------|-------------|
 | <a name="output_id"></a> [id](#output\_id) | The Service Bus Topic ID |
 | <a name="output_name"></a> [name](#output\_name) | The name of the Service Bus Namespace Authorization Rule. |
 | <a name="output_primary_connection_string"></a> [primary\_connection\_string](#output\_primary\_connection\_string) | The primary connection string for the Service Bus Namespace Authorization Rule. |
