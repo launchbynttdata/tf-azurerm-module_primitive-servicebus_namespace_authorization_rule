@@ -44,7 +44,7 @@ No resources.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+|------|---------|
 | <a name="output_rule_id"></a> [rule\_id](#output\_rule\_id) | n/a |
 | <a name="output_rule_name"></a> [rule\_name](#output\_rule\_name) | n/a |
 | <a name="output_service_bus_endpoint"></a> [service\_bus\_endpoint](#output\_service\_bus\_endpoint) | n/a |
@@ -97,7 +97,7 @@ No resources.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+|------|---------|
 | <a name="output_rule_id"></a> [rule\_id](#output\_rule\_id) | n/a |
 | <a name="output_service_bus_endpoint"></a> [service\_bus\_endpoint](#output\_service\_bus\_endpoint) | n/a |
 | <a name="output_service_bus_name"></a> [service\_bus\_name](#output\_service\_bus\_name) | n/a |
