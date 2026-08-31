@@ -25,7 +25,7 @@ func TestComposableComplete(t *testing.T, ctx types.TestContext) {
 	}
 
 	// The client requires the full hostname of the service bus
-	busEndpoint := terraform.Output(t, ctx.TerratestTerraformOptions(), "service_bus_endpoint")
+	busEndpoint := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "service_bus_endpoint")
 	u, err := url.Parse(busEndpoint)
 	if err != nil {
 		t.Fatalf("Unable to parse service bus endpoint: %e\n", err)
@@ -42,7 +42,7 @@ func TestComposableComplete(t *testing.T, ctx types.TestContext) {
 		if err != nil {
 			t.Fatalf("Unable to get namespace properties: %e\n", err)
 		}
-		name := terraform.Output(t, ctx.TerratestTerraformOptions(), "service_bus_name")
+		name := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "service_bus_name")
 
 		assert.Equal(t, name, resp.Name, "Expected name to be %s, got %s", name, resp.Name)
 	})
